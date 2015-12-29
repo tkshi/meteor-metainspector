@@ -10,6 +10,8 @@ Package.describe({
   documentation: 'README.md'
 });
 
+Npm.depends({"node-metainspector":'1.2.0'});
+
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
   api.use('ecmascript');
@@ -20,5 +22,5 @@ Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
   api.use('takashi:metainspector');
-  api.addFiles('metainspector-tests.js');
+  api.addFiles('metainspector-tests.js',['server']);
 });
