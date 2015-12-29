@@ -21,6 +21,7 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
+  api.use('meteorhacks:async');
   api.use('takashi:metainspector');
   api.addFiles('metainspector-tests.js',['server']);
 });
