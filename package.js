@@ -23,5 +23,7 @@ Package.onTest(function(api) {
   api.use('tinytest');
   api.use('meteorhacks:async');
   api.use('takashi:metainspector');
+  api.export('Metainspector', 'server');
+  api.addFiles('metainspector.js',['server']);
   api.addFiles('metainspector-tests.js',['server']);
 });
