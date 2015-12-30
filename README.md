@@ -4,7 +4,7 @@ This is wapper for [node-metainspector](https://github.com/gabceb/node-metainspe
 ## Usage
 
 ```
-result = MetaInspector.fetch("http://www.google.com")
+result = Metainspector.fetch("http://www.google.com")
 result.title
 # Google
 result.image
